@@ -60,3 +60,6 @@ docs/_build/
 
 # Archivos de configuración de linter
 .pylintrc
+
+# Variables de entorno
+.env

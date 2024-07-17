@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "alembic-template"
 version = "0.1.0"
-description = "El proyecto es una plantilla para incializar proyectos que usan sqlalchemy y alembic. El propósito es evitar configurar los archivos de alembic en cada proyecto, sino que en base a esta plantilla pueda comenzar a declarar los modelos y ejecutar tu primer migración, y que puedas ver tu base de datos física con un simple comando del alembic."
+description = "El proyecto es una plantilla para incializar proyectos que usan sqlalchemy y alembic. El propósito es evitar configurar los archivos de alembic en cada proyecto, sino que, al usar esta plantilla puedas comenzar a declarar tus modelos y ejecutar tu primer migración."
 authors = ["Carlos Alberto Baltazar Hinojosa <A840159943@my.uvm.edu.mx>"]
 readme = "README.md"
 
@@ -10,6 +10,7 @@ python = "^3.10"
 sqlalchemy = "^2.0.31"
 alembic = "^1.13.2"
 mysql-connector-python = "^9.0.0"
+python-dotenv = "^1.0.1"
 
 
 [build-system]
