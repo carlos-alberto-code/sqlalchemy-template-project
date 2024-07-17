@@ -1,0 +1,62 @@
+# Archivos y directorios generados por el entorno de desarrollo
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos de configuración
+*.ini
+*.cfg
+*.conf
+
+# Archivos de registro
+*.log
+
+# Directorios de entornos virtuales
+venv/
+env/
+env_bak/
+
+# Dependencias y paquetes instalados
+lib/
+lib64/
+bin/
+include/
+share/
+local/
+
+# Archivos de compilación
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.dll
+*.exe
+
+# Archivos de respaldo y temporales
+*~
+*.bak
+*.swp
+*.tmp
+*.temp
+
+# Archivos de caché
+.cache/
+
+# Archivos de registro de pruebas
+test.log
+
+# Archivos de documentación generados
+docs/_build/
+
+# Archivos de IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos de configuración de editor
+.editorconfig
+
+# Archivos de configuración de linter
+.pylintrc

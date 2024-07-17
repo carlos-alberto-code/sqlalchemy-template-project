@@ -1,0 +1,7 @@
+El proyecto es una plantilla para incializar proyectos que usan sqlalchemy y alembic. El propósito es evitar configurar los archivos de alembic en cada proyecto, sino que en base a esta plantilla pueda comenzar a declarar los modelos y ejecutar tu primer migración, y que puedas ver tu base de datos física con un simple comando del alembic.
+
+El proyecto usa poetry como para gestionar las dependencias (sqlalchemy, alembic y mysql-connector-python), por lo que es recomendable que estes usando esta herramienta en tus proyectos también; aunque existen formas de usar las herramientas de entorno virtual proporcionadas por Python para hacer uso de esta plantilla, sin embargo, este texto no proporciona un workflow sobre cómo hacerlo.
+
+De forma predeterminada poetry considera que vas a crear un paquete, razón por la cual existe una carpeta llamada ``alembic_template``. Si no desesar crear un paquete que pueda ser publicado en el PyPI, entonces haz uso de poetry para indicar que sólo requieres la herramienta para gestionar las dependencias.
+
+Las versión de las dependencias se detallan en el archivo ``pyproject.toml``. De forma predeterminada estarán definidas algunas versiones de ``sqlalchemy``, ``alembic`` y ``mysql-connector-python``; aunque puedes actualizar a otras versiones o usar versiones específicas con ayuda de poetry.
