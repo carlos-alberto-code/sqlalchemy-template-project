@@ -13,12 +13,11 @@ from database.models import Base
 load_dotenv()
 sys.path.append(os.getcwd())
 HOST     = os.getenv("HOST")
-PORT     = os.getenv("PORT")
 USERNAME = os.getenv("USERNAME")
 PASSWORD = os.getenv("PASSWORD")
 DATABASE = os.getenv("DATABASE")
 
-DATABASE_URI = f"mysql+mysqlconnector://{USERNAME}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}"
+DATABASE_URI = f"mysql+mysqlconnector://{USERNAME}:{PASSWORD}@{HOST}/{DATABASE}"
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.

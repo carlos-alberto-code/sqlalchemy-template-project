@@ -4,7 +4,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 HOST     = os.getenv("HOST")
-PORT     = os.getenv("PORT")
 USERNAME = os.getenv("USERNAME")
 PASSWORD = os.getenv("PASSWORD")
 DATABASE = os.getenv("DATABASE")
@@ -15,7 +14,7 @@ from database.models import Base
 from sqlalchemy.orm  import Session
 from sqlalchemy      import create_engine
 
-DATABASE_URI = f"mysql+mysqlconnector://{USERNAME}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}"
+DATABASE_URI = f"mysql+mysqlconnector://{USERNAME}:{PASSWORD}@{HOST}/{DATABASE}"
 engine = create_engine(DATABASE_URI, future=True)
 
 def get_session() -> Session:
